@@ -1,4 +1,5 @@
 vim/bundle/*
+!vim/bundle/Vundle.vim
 vim/backup/*
 vim/config/*
 vim/non_used/*
@@ -7,6 +8,8 @@ vim/undo/*
 vim/tags/*
 vim/.netrwhist
 vim/.VimballRecord
+tmux/plugins/*
+!tmux/plugins/tpm
 *.swp
 *.out
 *.log
