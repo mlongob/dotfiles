@@ -33,7 +33,6 @@ Plugin 'tpope/vim-unimpaired'
 
 " Dipatch build/test
 Plugin 'tpope/vim-dispatch'
-set makeprg=toolkit-remote\ nylxdev2\ gmake\ -j
 
 " Fugitive Git Wrapper
 Plugin 'tpope/vim-fugitive'
@@ -46,7 +45,7 @@ Plugin 'phleet/vim-arcanist'
 
 " Doxygen comments
 Plugin 'DoxygenToolkit.vim'
-let g:DoxygenToolkit_authorName="Mario Longobardi <mlongobardi2@bloomberg.net>"
+let g:DoxygenToolkit_authorName="Mario Longobardi <mlongob@gmail.com>"
 
 " Clang format for C/C++/ObjC
 "Plugin 'kana/vim-operator-user'

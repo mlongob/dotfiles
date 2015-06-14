@@ -66,11 +66,6 @@ nnoremap <leader>ss :source ~/.vim/startup/settings.vim<cr>
 "Nerd Tree
 nnoremap <leader>nt :NERDTreeToggle<cr>
 
-" Clang format wrapper
-map <leader>cf :pyf /bb/bigstorq4/scrpbuild/devtools/bin/clang-format.py<CR>
-imap <leader>cf <ESC>:pyf /bb/bigstorq4/scrpbuild/devtools/bin/clang-format.py<CR>i
-map <leader>sf :silent !toolkit-remote nylxdev2 /bb/bigstorq4/scrpbuild/devtools/bin/scrp_code_format.py %<CR>:e<CR>:redraw!<CR>
-
 " Paste with shift+ins
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
