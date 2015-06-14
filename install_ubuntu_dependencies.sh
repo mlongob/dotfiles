@@ -8,4 +8,5 @@ sudo apt-get install \
     vim-gtk \
     xclip \
     xsel \
+    shellcheck \
     htop
