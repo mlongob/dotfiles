@@ -21,6 +21,9 @@ if ! zgen saved; then
   # Plugins from robbyrussell's oh-my-zsh
   zgen oh-my-zsh plugins/tmux
   zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/colored-man
+  zgen oh-my-zsh plugins/colorize
+  zgen oh-my-zsh plugins/web-search
   #zgen oh-my-zsh plugins/pip
   #zgen oh-my-zsh plugins/python
   #zgen oh-my-zsh plugins/virtualenv
