@@ -170,9 +170,12 @@ filetype plugin indent on
 " Configure Promptline Preset
 if g:platform == "Linux"
     let g:promptline_preset = {
-        \'a' : [ promptline#slices#host() ],
+        \'a' : [ '%M' ],
         \'b' : [ promptline#slices#user() ],
-        \'c' : [ promptline#slices#vcs_branch(), promptline#slices#cwd() ],
+        \'c' : [ promptline#slices#cwd() ],
+        \'x' : [ promptline#slices#vcs_branch() ],
+        \'y' : [ promptline#slices#git_status() ],
+        \'z' : [ '%*' ],
         \'warn' : [ promptline#slices#last_exit_code() ]}
 endif
 
