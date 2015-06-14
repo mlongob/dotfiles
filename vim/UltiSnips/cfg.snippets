@@ -1,0 +1,32 @@
+snippet columnheader "Column Header Porting Design pattern" b
+${1:PATTERN_NAME}_RE : re('$2')
+
+$1_WITH_HEADER : alt($1_RE)
+{
+    HEADER_DB="${3:HEADER_COLTYPE}"
+}
+
+$1_WITHOUT_HEADER : alt($1_RE)
+{
+    NO_HEADERS=True
+}
+
+$1 : alt($1_WITH_HEADER, $1_WITHOUT_HEADER)
+endsnippet
+
+
+snippet columnheaderraw "Column Header Porting Design pattern" b
+${1:PATTERN_NAME}_RAW : re('$2')
+
+$1_WITH_HEADER : alt($1_RAW)
+{
+    HEADER_DB="${3:HEADER_COLTYPE}"
+}
+
+$1_WITHOUT_HEADER : alt($1_RAW)
+{
+    NO_HEADERS=True
+}
+
+$1 : alt($1_WITH_HEADER, $1_WITHOUT_HEADER)
+endsnippet

@@ -1,0 +1,13 @@
+snippet rb
+Reviewed-by: ${1:`git config --get user.name`} <${2:`git config --get user.email`}>
+endsnippet
+
+snippet signoff
+Signed-off-by: ${1:`git config --get user.name`} <${2:`git config --get user.email`}>
+endsnippet
+
+snippet phab
+Test Plan: ${1:None}
+
+Reviewers: $2
+endsnippet

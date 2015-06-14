@@ -1,0 +1,39 @@
+- clean: ['~']
+
+- link:
+    # Advanced format:
+    # ~/.foo:
+    #     path: foo
+    #     create: false
+    #     relink: false
+    #     force: false
+
+    ~/.bash_logout: bash_logout
+    ~/.bash_prompt.sh: bash_prompt.sh
+    ~/.bashrc: bashrc
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/.inputrc: inputrc
+    ~/.tmux.conf: tmux.conf
+    ~/.tmux: tmux/
+    ~/.vim: vim/
+    ~/.vimrc: vimrc
+    ~/.zsh: zsh/
+    ~/.zshrc: zshrc
+
+- shell:
+    - [git submodule update --init --remote, Updating submodules]
+    - command: ./powerline-fonts/install.sh
+      stdin: true
+      stdout: true
+      stderr: true
+    - command: vim +PluginInstall +qall
+      stdin: true
+      stdout: true
+      stderr: true
+    - command: ~/.vim/bundle/YouCompleteMe/install.sh --clang-completer
+      stdin: true
+      stdout: true
+      stderr: true
+
+
