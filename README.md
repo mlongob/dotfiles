@@ -37,6 +37,7 @@ The following packages need to be installed on the system before installing the 
 * `vim-gtk`
 * `xclip`
 * `xsel`
+* `zsh`
 
 If you are on Ubuntu, you can install them by running:
 ```
@@ -46,6 +47,7 @@ If you are on Ubuntu, you can install them by running:
 ## Installing
 In order to install the dotfiles:
 ```
+chsh -s $(which zsh)   # Make zsh the default shell
 git clone https://github.com/mlongob/dotfiles.git ~/.dotfiles
 ~/.dotfiles/install
 ```

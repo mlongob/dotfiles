@@ -9,4 +9,5 @@ sudo apt-get install \
     xclip \
     xsel \
     shellcheck \
-    htop
+    htop \
+    zsh
