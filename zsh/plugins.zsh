@@ -8,6 +8,10 @@ if [ "$TERM" != "screen-256color" ]; then
     export TERM=xterm-256color
 fi
 
+if [ -n "$SSH_CONNECTION" ]; then
+    export ZSH_TMUX_AUTOSTART=false
+fi
+
 # Load antigen
 source ${HOME}/.dotfiles/zgen/zgen.zsh
 
