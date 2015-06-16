@@ -18,6 +18,7 @@ unset file
 
 # Format the prompt
 function EXT_COLOR () { echo -ne "\[\033[38;5;$1m\]";COL_COLOR="\[\033[0m\]"; }
+PS1='\[\e[1;32m\][\u@\h \w]\$\[\e[0m\] '
 
 export EDITOR=vim
 if [ "$TERM" != "screen-256color" ]; then
