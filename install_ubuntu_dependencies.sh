@@ -9,6 +9,7 @@ sudo apt-get install \
     clipman \
     cmake \
     curl \
+    exuberant-ctags \
     git \
     haskell-platform \
     htop \
