@@ -125,8 +125,11 @@ set gdefault
 "" GVIM Settings
 if has('gui_running')
     set guioptions=acimg
-    if g:platform == "Linux" || g:platform == "SunOS"
+    if g:platform != "AIX"
         set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+    endif
+    if g:platform == "Darwin"
+        set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
     endif
 endif
 

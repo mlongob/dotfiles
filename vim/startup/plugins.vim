@@ -86,7 +86,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#non_zero_only = 1 " git gutter
-if g:platform == "Linux" || g:platform == "SunOS"
+if g:platform != "AIX"
     " Use Patched fonts on Linux and Sun
     let g:airline_powerline_fonts = 1
 endif
@@ -103,7 +103,7 @@ Plugin 'flazz/vim-colorschemes'
 " Syntax checking
 Plugin 'scrooloose/syntastic'
 
-if g:platform != "AIX"
+if g:platform == "Linux"
     let g:syntastic_error_symbol = '✗✗'
     let g:syntastic_style_error_symbol = '✠✠'
     let g:syntastic_warning_symbol = '∆∆'
@@ -126,7 +126,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'christoomey/vim-tmux-navigator'
 
 " Linux-Only plug-ins
-if g:platform == "Linux"
+if g:platform != "AIX"
     " Autocompletion and semantic completion
     Plugin 'Valloric/YouCompleteMe'
     "let g:ycm_server_log_level = 'debug'
@@ -167,7 +167,7 @@ call vundle#end()
 filetype plugin indent on
 
 " Configure Promptline Preset
-if g:platform == "Linux"
+if g:platform != "AIX"
     let g:promptline_preset = {
         \'a' : [ '%M' ],
         \'b' : [ promptline#slices#user() ],
