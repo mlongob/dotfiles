@@ -7,6 +7,12 @@ alias l='ls'
 alias cp='cp -i'
 alias mv='mv -i'
 
+hub_path=$(which hub)
+if (( $+commands[hub] ))
+then
+      alias git=$hub_path
+fi
+
 # git related aliases
 alias gag='git exec ag'
 
