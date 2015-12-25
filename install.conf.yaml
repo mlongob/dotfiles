@@ -13,6 +13,7 @@
     ~/.bashrc: bashrc
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.ghci: ghci
     ~/.inputrc: inputrc
     ~/.tmux.conf: tmux.conf
     ~/.tmux: tmux/
