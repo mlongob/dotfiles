@@ -50,6 +50,7 @@
 	f = "!git ls-files | grep"
 	srb = svn rebase
 	la = "!git config -l | grep alias | cut -c 7-"
+	touch = "!touch $1 && git add $1"
 	exec = ! "exec"
 	st = status -sb
 	br = branch -vv
@@ -111,6 +112,3 @@
 # Allow local customizations in the .gitconfig_local file
 [include]
 	path = ~/.gitconfig_local
-
-
-
