@@ -37,6 +37,9 @@ Plugin 'tpope/vim-dispatch'
 " Fugitive Git Wrapper
 Plugin 'tpope/vim-fugitive'
 
+" Shell in vim
+Plugin 'Shougo/vimshell.vim'
+
 " Set directory to vim root
 Plugin 'airblade/vim-rooter'
 
@@ -102,6 +105,23 @@ Plugin 'flazz/vim-colorschemes'
 
 " Syntax checking
 Plugin 'scrooloose/syntastic'
+
+" Plugins for Haskell
+Plugin 'eagletmt/neco-ghc'
+autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+let g:ycm_semantic_triggers = {'haskell' : ['.']}
+let g:necoghc_enable_detailed_browse = 1
+Plugin 'bitc/vim-hdevtools'
+"au FileType haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+"au FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+Plugin 'Shougo/vimproc'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'lukerandall/haskellmode-vim'
+let g:haskellmode_completion_ghc = 0
+au BufEnter *.hs compiler ghc
+let g:haddock_browser="/usr/bin/open"
+Plugin 'Twinside/vim-hoogle'
+Plugin 'bitc/lushtags'
 
 if g:platform == "Linux"
     let g:syntastic_error_symbol = '✗✗'
