@@ -145,6 +145,9 @@ Plugin 'majutsushi/tagbar'
 " Tmux movement mappings
 Plugin 'christoomey/vim-tmux-navigator'
 
+" Tmux integration
+Plugin 'benmills/vimux'
+
 " Linux-Only plug-ins
 if g:platform != "AIX"
     " Autocompletion and semantic completion
@@ -154,6 +157,7 @@ if g:platform != "AIX"
     let g:ycm_autoclose_preview_window_after_insertion = 1
     let g:ycm_always_populate_location_list = 1
     let g:ycm_global_ycm_extra_conf = '~/.ycm_default_conf.py'
+    let g:ycm_seed_identifiers_with_syntax = 1
 
     " Show Location list output in airline
     Plugin 'asenac/vim-airline-loclist'
