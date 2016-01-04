@@ -8,6 +8,7 @@
 *.tsk
 *.so
 *.pyc
+*.hi
 
 # Editing tools and IDEs #
 ##########################
