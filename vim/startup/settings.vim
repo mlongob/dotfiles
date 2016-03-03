@@ -122,6 +122,9 @@ set noexrc
 set secure
 set gdefault
 
+"" encryption
+set cm=blowfish2
+
 "" GVIM Settings
 if has('gui_running')
     set guioptions=acimg

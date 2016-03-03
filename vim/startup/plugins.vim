@@ -121,7 +121,6 @@ let g:haskellmode_completion_ghc = 0
 au BufEnter *.hs compiler ghc
 let g:haddock_browser="/usr/bin/open"
 Plugin 'Twinside/vim-hoogle'
-Plugin 'bitc/lushtags'
 
 if g:platform == "Linux"
     let g:syntastic_error_symbol = '✗✗'
