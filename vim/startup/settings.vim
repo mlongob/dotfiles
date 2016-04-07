@@ -45,6 +45,9 @@ endif
 "" using the mouse
 set mouse=a
 
+"" clipboard
+set clipboard=unnamed
+
 "" messages and info
 set shortmess=aoOstTI
 set showcmd
