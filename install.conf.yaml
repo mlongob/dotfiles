@@ -14,9 +14,11 @@
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.ghci: ghci
+    ~/.haskeline: haskeline
     ~/.inputrc: inputrc
     ~/.tmux.conf: tmux.conf
     ~/.tmux: tmux/
+    ~/.stack: stack/
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.zsh: zsh/

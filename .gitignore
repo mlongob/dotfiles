@@ -10,6 +10,8 @@ vim/.netrwhist
 vim/.VimballRecord
 tmux/plugins/*
 !tmux/plugins/tpm
+stack/*
+!stack/config.yaml
 *.swp
 *.out
 *.log
