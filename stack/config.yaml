@@ -2,4 +2,11 @@
 # in all projects.  For more information about stack's configuration, see
 # http://docs.haskellstack.org/en/stable/yaml_configuration/
 #
-{}
+templates:
+  params:
+    author-email: "mlongob@gmail.com"
+    author-name: "Mario Longobardi"
+    category: Misc
+    copyright: "2016"
+    github-username: "mlongob"
+
