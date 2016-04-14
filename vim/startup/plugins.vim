@@ -120,6 +120,7 @@ Plugin 'lukerandall/haskellmode-vim'
 let g:haskellmode_completion_ghc = 0
 au BufEnter *.hs compiler ghc
 let g:haddock_browser="/usr/bin/open"
+let g:haddock_docdir="/usr/local/share/doc/ghc/html/"
 Plugin 'Twinside/vim-hoogle'
 
 if g:platform == "Linux"
