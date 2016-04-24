@@ -86,7 +86,8 @@ let g:ctrlp_custom_ignore = {
 Plugin 'scrooloose/nerdcommenter'
 
 " Airline for pretty status/tab lines
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#hunks#non_zero_only = 1 " git gutter
 if g:platform != "AIX"
@@ -105,6 +106,9 @@ Plugin 'flazz/vim-colorschemes'
 
 " Syntax checking
 Plugin 'scrooloose/syntastic'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_check_on_wq = 0
 
 " Plugins for Haskell
 Plugin 'eagletmt/neco-ghc'
