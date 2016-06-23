@@ -8,8 +8,9 @@ A collection of dotfiles for my development environment.
 * VCS: `git`
 
 This configuration is well tuned for developing in the following languages:
-* `C`
 * `C++`
+* `C`
+* `Haskell`
 * `Java`
 * `Javascript`
 * `Python`
