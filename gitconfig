@@ -24,7 +24,7 @@
 	cmd = gvim -f -c \"Gvdiff\" \"$MERGED\"
 
 [merge]
-	tool = gfugitive
+	tool = fugitive
 
 [core]
 	preloadindex = true
