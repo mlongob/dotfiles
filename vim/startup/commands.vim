@@ -17,6 +17,18 @@ autocmd FileType make setlocal noexpandtab shiftwidth=8
 " xsd files
 autocmd FileType xsd,xml set textwidth=0
 
+function! FormatHaskell()
+    if !empty(v:char)
+        return 1
+    else
+        let l:filter = "hindent --style johan-tibell"
+        let l:command = v:lnum.','.(v:lnum+v:count-1).'!'.l:filter
+        execute l:command
+    endif
+endfunction
+
+autocmd FileType haskell setlocal formatexpr=FormatHaskell()
+
 " Open NERDTree when no files are specified
 "autocmd vimenter * if !argc() | NERDTree | endif
 

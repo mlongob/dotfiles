@@ -13,6 +13,9 @@ ino <right> <Nop>
 " Map jk to ESC for easy hand-positioning
 ino jk <esc>
 
+" Save \w
+nnoremap <leader>w :w<CR>
+
 "" F-Keys Mapping
 " Toggle paste mode
 set pastetoggle=<F2>
