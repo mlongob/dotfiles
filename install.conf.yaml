@@ -38,6 +38,10 @@
       stdin: true
       stdout: true
       stderr: true
+    - command: "cd ~/.vim/bundle/vimproc && make"
+      stdin: true
+      stdout: true
+      stderr: true
     - command: ~/.tmux/install_plugins.sh
       stdin: true
       stdout: true
