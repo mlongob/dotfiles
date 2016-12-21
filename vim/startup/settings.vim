@@ -46,7 +46,7 @@ endif
 set mouse=a
 
 "" clipboard
-set clipboard=unnamed
+"set clipboard=unnamed
 
 "" messages and info
 set shortmess=aoOstTI
