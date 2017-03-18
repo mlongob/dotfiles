@@ -2,7 +2,7 @@
 #  Zgen setup   #
 #################
 
-export ZSH_TMUX_AUTOSTART=true
+#export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_AUTOCONNECT=false
 if [ "$TERM" != "screen-256color" ]; then
     export TERM=xterm-256color

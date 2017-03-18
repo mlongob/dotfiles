@@ -19,6 +19,7 @@
     ~/.tmux.conf: tmux.conf
     ~/.tmux: tmux/
     ~/.stack: stack/
+    ~/.spacemacs.d: spacemacs.d/
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.zsh: zsh/
@@ -43,6 +44,10 @@
       stdout: true
       stderr: true
     - command: ~/.tmux/install_plugins.sh
+      stdin: true
+      stdout: true
+      stderr: true
+    - command: git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
       stdin: true
       stdout: true
       stderr: true
