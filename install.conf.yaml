@@ -23,6 +23,7 @@
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.zsh: zsh/
+    ~/.zshenv: zshenv
     ~/.zshrc: zshrc
 
 - shell:

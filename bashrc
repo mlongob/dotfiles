@@ -2,7 +2,6 @@
 ## .bashrc - bash instance configuration
 
 export PYTHONPATH=~/python:$PYTHONPATH
-export PATH=~/bin:$PATH
 
 # If not running interactively, don't do anything
 case $- in
