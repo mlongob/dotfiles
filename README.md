@@ -2,7 +2,7 @@
 A collection of dotfiles for my development environment.
 
 ## Components
-* Editor: `vim` and `gvim`
+* Editor: `emacs` (with `vim` backup)
 * Shell: `zsh` (with `bash` backup)
 * Terminal multiplexer: `tmux`
 * VCS: `git`
@@ -27,9 +27,9 @@ My dotfiles use the following managers:
 
 ## Prerequisites
 The following packages need to be installed on the system before installing the dotfiles:
-
 * `build-essential`
 * `cmake`
+* `emacs`
 * `git`
 * `htop`
 * `python-dev`
