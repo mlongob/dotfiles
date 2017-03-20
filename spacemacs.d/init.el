@@ -343,6 +343,8 @@ you should place your code here."
    powerline-default-separator 'utf-8
    ;; Set escape keybinding to "jk"
    evil-escape-key-sequence "jk")
+
+  (exec-path-from-shell-copy-envs '("http_proxy" "https_proxy" "no_proxy"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
