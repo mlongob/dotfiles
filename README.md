@@ -64,11 +64,12 @@ The procedure will:
 ## Making Local Customizations
 You can make local customizations for some programs by editing these files:
 
-* `vim` : `~/.vimrc_local`
-* `zsh` : `~/.zshrc_local_before` run before `.zshrc`
-* `zsh` : `~/.zshrc_local_after` run after `.zshrc`
 * `git` : `~/.gitconfig_local`
+* `spacemacs` : `~/.spacemacs_local`
 * `tmux` : `~/.tmux_local.conf`
+* `vim` : `~/.vimrc_local`
+* `zsh` : `~/.zshrc_local_after` run after `.zshrc`
+* `zsh` : `~/.zshrc_local_before` source before `.zprofile`
 
 ## License
 Copyright (c) 2015 Mario Longobardi. Released under the MIT License. See
