@@ -408,6 +408,7 @@ you should place your code here."
                                      (substatement-open . 0)
                                      (substatement-label . 0)
                                      (case-label        . 4)
+                                     (access-label      . -2)
                                      (block-open        . 0)
                                      (statement-block-intro . +)
                                      (label . 0)

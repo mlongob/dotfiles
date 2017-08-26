@@ -90,3 +90,8 @@ function nonascii() {
 
 # Mirror a website
 alias mirrorsite='wget -m -k -K -E -e robots=off'
+
+# Emacs aliases
+alias et="emacsclient -t"
+alias e="emacsclient -n"
+alias ec="emacsclient -c -a emacs -n"

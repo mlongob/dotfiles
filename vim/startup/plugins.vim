@@ -179,7 +179,7 @@ if g:platform != "AIX"
     "Plugin 'edkolev/tmuxline.vim'
 
     " Snippets
-    Plugin 'SirVer/ultisnips'
+    " Plugin 'SirVer/ultisnips'
     Plugin 'honza/vim-snippets'
     " Trigger configuration. Do not use <tab>.
     let g:UltiSnipsExpandTrigger="<c-j>"
