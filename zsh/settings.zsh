@@ -24,7 +24,7 @@ KEYTIMEOUT=10 # corresponds to 100ms
 # Use vim as the editor
 export ALTERNATE_EDITOR=""
 export EDITOR="emacsclient -t"
-export VISUAL="emacsclient -c -a emacs"
+export VISUAL="emacsclient -t"
 
 # Use vim style line editing in zsh
 bindkey -v

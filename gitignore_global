@@ -16,6 +16,7 @@
 *~
 .tramp_history
 .#*
+.dir-locals.el
 
 # Logs and databases #
 ######################
