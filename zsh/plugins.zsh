@@ -21,9 +21,11 @@ if ! zgen saved; then
   zgen oh-my-zsh plugins/colored-man
   zgen oh-my-zsh plugins/colorize
   zgen oh-my-zsh plugins/web-search
-  #zgen oh-my-zsh plugins/pip
-  #zgen oh-my-zsh plugins/python
-  #zgen oh-my-zsh plugins/virtualenv
+  zgen oh-my-zsh plugins/docker
+  zgen oh-my-zsh plugins/docker-compose
+  zgen oh-my-zsh plugins/pip
+  zgen oh-my-zsh plugins/python
+  zgen oh-my-zsh plugins/virtualenv
   zgen oh-my-zsh plugins/command-not-found
 
   # Github plugins

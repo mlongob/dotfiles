@@ -63,3 +63,6 @@ bindkey -M viins 'jk' vi-cmd-mode
 
 # Use incremental search
 bindkey "^R" history-incremental-search-backward
+
+# BMS team
+export UUID=10724260
