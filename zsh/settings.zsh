@@ -23,8 +23,7 @@ KEYTIMEOUT=10 # corresponds to 100ms
 
 # Use vim as the editor
 export ALTERNATE_EDITOR=""
-export EDITOR="emacsclient -t"
-export VISUAL="emacsclient -t"
+export EDITOR="vim"
 
 # Use vim style line editing in zsh
 bindkey -v
@@ -66,3 +65,4 @@ bindkey "^R" history-incremental-search-backward
 
 # BMS team
 export UUID=10724260
+export TOOLKIT_USERNAME="mlongob1"

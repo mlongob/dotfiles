@@ -39,3 +39,12 @@ export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/2.6.0/bin:$PATH"
+export PATH="/usr/local/opt/node@14/bin:$PATH"
+
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/opt/homebrew/opt/python@3.8/bin"
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+
+[ -f "/Users/mlongobardi2/.ghcup/env" ] && source "/Users/mlongobardi2/.ghcup/env" # ghcup-env
+source ~/.lcldevrc

@@ -95,8 +95,6 @@ alias mirrorsite='wget -m -k -K -E -e robots=off'
 alias et="emacsclient -t"
 alias e="emacsclient -n"
 alias ec="emacsclient -c -a emacs -n"
-alias vim="et"
-alias vi="et"
 
 # Docker compose
 alias doco="docker-compose"
