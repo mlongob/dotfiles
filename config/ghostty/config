@@ -1,7 +1,7 @@
 # Ghostty Configuration
 
 # Font
-font-family = FiraCode Nerd Font
+font-family = FiraCode Nerd Font Mono
 font-size = 13
 
 # Theme — Catppuccin Mocha
