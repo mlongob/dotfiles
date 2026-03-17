@@ -1,10 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-# tmux plugin — auto-start tmux when opening a terminal
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOSTART_ONCE=false
-ZSH_TMUX_AUTOCONNECT=false
-
 plugins=(
   tmux
   git
