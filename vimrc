@@ -89,7 +89,7 @@ set novisualbell
 " ============================================================================
 set termguicolors
 syntax enable
-colorscheme catppuccin_mocha
+silent! colorscheme catppuccin_mocha
 
 " Simple statusline (no plugin needed)
 set statusline=%f\ %m%r%h%w\ %y\ [%{&ff}]%=%l/%L\ col\ %c\ %p%%

@@ -20,7 +20,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]
-    - command: brew install zsh-autosuggestions zsh-syntax-highlighting fzf zoxide starship
+    - command: brew install tmux zsh-autosuggestions zsh-syntax-highlighting fzf zoxide starship
       stdin: true
       stdout: true
       stderr: true
