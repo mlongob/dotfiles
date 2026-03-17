@@ -32,6 +32,16 @@ brew "ncdu"              # interactive disk usage
 brew "mkcert"            # local HTTPS certs
 brew "coreutils"         # GNU coreutils (replaces BSD versions)
 brew "mas"               # Mac App Store CLI
+brew "atuin"             # better shell history (searchable, synced, SQLite-backed)
+brew "yazi"              # terminal file manager with vim keybindings
+brew "lazydocker"        # terminal UI for Docker
+brew "btop"              # better htop (prettier system monitor)
+brew "trash-cli"         # move files to macOS Trash instead of rm
+brew "glow"              # terminal markdown renderer
+brew "difftastic"        # structural/AST-aware diffs
+brew "tokei"             # fast code statistics / line counter
+brew "bandwhich"         # bandwidth usage per process
+brew "hyperfine"         # CLI benchmarking tool
 
 # ─── Development ─────────────────────────────────────────────────────────────
 brew "python@3.14"

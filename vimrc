@@ -16,6 +16,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'tpope/vim-vinegar'
 
 call plug#end()
 
@@ -58,6 +59,7 @@ set smarttab
 set backspace=indent,eol,start
 set showmatch
 set mouse=a
+set hidden
 
 " Files
 set autoread

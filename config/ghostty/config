@@ -45,6 +45,10 @@ scrollback-limit = 50000
 cursor-style = block
 cursor-style-blink = false
 
+# Clipboard
+clipboard-read = allow
+clipboard-write = allow
+
 # Keybindings — match tmux split conventions
 keybind = cmd+d=new_split:right
 keybind = cmd+shift+d=new_split:down

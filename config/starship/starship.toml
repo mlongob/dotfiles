@@ -23,7 +23,11 @@ $python\
 $conda\
 [](fg:sapphire bg:lavender)\
 $time\
-[ ](fg:lavender)\
+[](fg:lavender bg:mauve)\
+$jobs\
+[](fg:mauve bg:maroon)\
+$status\
+[ ](fg:maroon)\
 $cmd_duration\
 $line_break\
 $character"""
@@ -157,6 +161,19 @@ vimcmd_symbol = '[❮](bold fg:green)'
 vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
 vimcmd_replace_symbol = '[❮](bold fg:lavender)'
 vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+
+[jobs]
+disabled = false
+symbol = "󰜎"
+number_threshold = 1
+style = "bg:mauve"
+format = '[[ $symbol $number ](fg:crust bg:mauve)]($style)'
+
+[status]
+disabled = false
+symbol = "✘"
+style = "bg:maroon"
+format = '[[ $symbol $status ](fg:crust bg:maroon)]($style)'
 
 [cmd_duration]
 show_milliseconds = true

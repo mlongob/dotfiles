@@ -84,6 +84,21 @@ function nonascii() {
     LC_ALL=C grep -n '[^[:print:][:space:]]' ${1}
 }
 
+# yazi — cd to directory on quit with 'yy'
+function yy() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
+
+# trash — safer alternative to rm
+if command -v trash &>/dev/null; then
+    alias del='trash'
+fi
+
 # Docker compose
 alias doco="docker-compose"
 

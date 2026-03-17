@@ -29,6 +29,14 @@
         path: config/bat/themes
         force: true
         create: true
+    ~/.config/btop/btop.conf:
+        path: config/btop/btop.conf
+        force: true
+        create: true
+    ~/.config/btop/themes:
+        path: config/btop/themes
+        force: true
+        create: true
     ~/.config/mise/config.toml:
         path: config/mise/config.toml
         create: true

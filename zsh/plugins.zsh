@@ -9,11 +9,9 @@ plugins=(
   pip
   python
   virtualenv
-  history-substring-search
   macos
   gh
   fzf
-  z
 )
 
 # External plugins (installed via Homebrew)
