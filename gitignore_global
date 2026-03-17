@@ -13,6 +13,7 @@
 # Editing tools and IDEs #
 ##########################
 *.swp
+*.sw[nop]
 *~
 .tramp_history
 .#*
@@ -33,3 +34,9 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Environment / secrets #
+##########################
+.env
+.env.local
+.env.*.local

@@ -42,7 +42,7 @@ alias cdgr='cd "$(git root)"'
 
 # Create a directory and cd into it
 function mcd() {
-    mkdir "${1}" && cd "${1}"
+    mkdir -p "${1}" && cd "${1}"
 }
 
 # Jump to directory containing file
@@ -91,3 +91,22 @@ alias doco="docker-compose"
 if command -v lazygit &>/dev/null; then
     alias lg='lazygit'
 fi
+
+# Allow sudo to expand aliases
+alias sudo='sudo '
+
+# macOS utilities
+alias flush='dscacheutil -flushcache && killall -HUP mDNSResponder'
+alias afk='osascript -e "tell application \"System Events\" to keystroke \"q\" using {command down, control down}"'
+alias cleanup='find . -type f -name ".DS_Store" -delete && echo "Cleaned .DS_Store files"'
+alias showfiles='defaults write com.apple.finder AppleShowAllFiles true && killall Finder'
+alias hidefiles='defaults write com.apple.finder AppleShowAllFiles false && killall Finder'
+
+# Print each PATH entry on its own line
+alias path='echo -e ${PATH//:/\\n}'
+
+# Quick local HTTP server (opens browser automatically)
+function server() {
+    local port="${1:-8000}"
+    open "http://localhost:${port}/" && python3 -m http.server "${port}"
+}

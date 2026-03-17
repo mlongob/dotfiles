@@ -4,6 +4,7 @@
 
 [diff]
 	tool = vscode
+	colorMoved = zebra
 
 [difftool "vscode"]
 	cmd = code --wait --diff $LOCAL $REMOTE
@@ -30,6 +31,7 @@
 	preloadindex = true
 	pager = delta
 	excludesfile = ~/.gitignore_global
+	trustctime = false
 
 [interactive]
 	diffFilter = delta --color-only
@@ -47,8 +49,15 @@
 [pull]
 	rebase = true
 
+[fetch]
+	prune = true
+	followTags = true
+
+[rebase]
+	autosquash = true
+
 [push]
-	default = simple
+	default = current
 
 [alias]
 	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) -%C(bold red) %an%C(reset)'
@@ -58,6 +67,9 @@
 	last = log -1 --pretty=%B
 	amend = commit --amend --no-edit
 	f = "!git ls-files | grep"
+	pf = push --force-with-lease
+	ap = add --patch
+	branches = "!git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 	srb = svn rebase
 	la = "!git config -l | grep alias | cut -c 7-"
 	touch = "!touch $1 && git add $1"

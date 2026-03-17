@@ -62,6 +62,15 @@ defaults write com.apple.dock minimize-to-application -bool true
 # Set icon size
 defaults write com.apple.dock tilesize -int 48
 
+# Don't automatically rearrange Spaces based on most recent use
+defaults write com.apple.dock mru-spaces -bool false
+
+# Show hidden app icons as translucent in the Dock
+defaults write com.apple.dock showhidden -bool true
+
+# Show all windows ungrouped in Mission Control
+defaults write com.apple.dock expose-group-by-app -bool false
+
 # ─── Keyboard ────────────────────────────────────────────────────────────────
 
 # Enable key repeat (disable press-and-hold for accents popup)
@@ -99,6 +108,24 @@ defaults write com.apple.screencapture type -string "png"
 
 # Disable screenshot shadow
 defaults write com.apple.screencapture disable-shadow -bool true
+
+# ─── Save / iCloud behavior ──────────────────────────────────────────────────
+
+# New documents save locally by default, not to iCloud
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Save dialogs always open in expanded mode (full file browser)
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+# Print dialogs always open in expanded mode
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+# ─── Screen lock ─────────────────────────────────────────────────────────────
+
+# Require password immediately after screensaver or sleep
+defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 #─── TextEdit ────────────────────────────────────────────────────────────────
 

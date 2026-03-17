@@ -24,6 +24,9 @@ KEYTIMEOUT=10 # corresponds to 100ms
 # Default editor
 export EDITOR="vim"
 
+# GPG — required for commit signing to work correctly in terminal emulators
+export GPG_TTY=$(tty)
+
 # Use vim style line editing in zsh
 bindkey -v
 # Movement
