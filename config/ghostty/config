@@ -2,6 +2,7 @@
 
 # Font
 font-family = FiraCode Nerd Font Mono
+font-family = Symbols Nerd Font Mono
 font-size = 13
 
 # Theme — Catppuccin Mocha
