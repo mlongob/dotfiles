@@ -20,9 +20,7 @@
     ~/.config/ghostty/config:
         path: config/ghostty/config
         create: true
-    ~/.dotfiles/bin:
-        path: bin/
-        create: true
+
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]
