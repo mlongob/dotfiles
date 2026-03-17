@@ -97,12 +97,7 @@ defaults write com.apple.screencapture type -string "png"
 # Disable screenshot shadow
 defaults write com.apple.screencapture disable-shadow -bool true
 
-# ─── Safari ──────────────────────────────────────────────────────────────────
-
-# Show full URL in address bar
-defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
-
-# ─── TextEdit ────────────────────────────────────────────────────────────────
+#─── TextEdit ────────────────────────────────────────────────────────────────
 
 # Use plain text by default
 defaults write com.apple.TextEdit RichText -int 0
