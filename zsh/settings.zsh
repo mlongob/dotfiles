@@ -59,3 +59,13 @@ bindkey "^R" history-incremental-search-backward
 
 # zoxide (better cd)
 eval "$(zoxide init zsh)"
+
+# direnv (per-project env vars)
+if command -v direnv &>/dev/null; then
+    eval "$(direnv hook zsh)"
+fi
+
+# mise (runtime version manager)
+if command -v mise &>/dev/null; then
+    eval "$(mise activate zsh)"
+fi

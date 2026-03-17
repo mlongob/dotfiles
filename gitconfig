@@ -28,8 +28,18 @@
 
 [core]
 	preloadindex = true
-	pager = less -R -n -F -X -E
+	pager = delta
 	excludesfile = ~/.gitignore_global
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	light = false
+	side-by-side = true
+	line-numbers = true
+	syntax-theme = catppuccin-mocha
 
 [pager]
 	status = true

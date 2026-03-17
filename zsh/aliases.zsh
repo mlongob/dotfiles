@@ -86,3 +86,8 @@ function nonascii() {
 
 # Docker compose
 alias doco="docker-compose"
+
+# lazygit
+if command -v lazygit &>/dev/null; then
+    alias lg='lazygit'
+fi
