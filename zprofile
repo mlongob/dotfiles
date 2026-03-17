@@ -1,7 +1,13 @@
-# Allow local customizations in the ~/.zshrc_local_before file
+# ~/.zprofile — login shell configuration
+# Sourced once at login, before .zshrc
+
+# Allow local customizations before main config
 if [ -f ~/.zshrc_local_before ]; then
     source ~/.zshrc_local_before
 fi
 
-# Add local bin folder (used by stack)
-export PATH=~/.local/bin:${PATH}
+# Personal scripts
+export PATH="$HOME/.dotfiles/bin:$PATH"
+
+# Local bin
+export PATH="$HOME/.local/bin:$PATH"
