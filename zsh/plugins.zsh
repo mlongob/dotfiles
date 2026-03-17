@@ -1,45 +1,23 @@
-#################
-#  Zgen setup   #
-#################
+export ZSH="$HOME/.oh-my-zsh"
 
-#export ZSH_TMUX_AUTOSTART=true
-export ZSH_TMUX_AUTOCONNECT=false
+plugins=(
+  tmux
+  git
+  colored-man-pages
+  docker
+  docker-compose
+  pip
+  python
+  virtualenv
+  history-substring-search
+  macos
+  gh
+  fzf
+  z
+)
 
-# Load antigen
-source ${HOME}/.dotfiles/zgen/zgen.zsh
+# External plugins (installed via Homebrew)
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# check if there's no init script
-if ! zgen saved; then
-  echo "Creating a zgen save"
-
-  # Load robbyrussell's oh-my-zsh's library
-  zgen oh-my-zsh
-
-  # Plugins from robbyrussell's oh-my-zsh
-  zgen oh-my-zsh plugins/tmux
-  zgen oh-my-zsh plugins/git
-  zgen oh-my-zsh plugins/colored-man
-  zgen oh-my-zsh plugins/colorize
-  zgen oh-my-zsh plugins/web-search
-  zgen oh-my-zsh plugins/docker
-  zgen oh-my-zsh plugins/docker-compose
-  zgen oh-my-zsh plugins/pip
-  zgen oh-my-zsh plugins/python
-  zgen oh-my-zsh plugins/virtualenv
-  zgen oh-my-zsh plugins/command-not-found
-
-  # Github plugins
-  #zgen load rupa/z
-  zgen load zsh-users/zsh-syntax-highlighting
-  zgen load zsh-users/zsh-completions src
-  #zgen load kennethreitz/autoenv
-
-  zgen oh-my-zsh plugins/history-substring-search
-
-  # Load theme
-  #zgen oh-my-zsh themes/ys
-
-  # Tell antigen that you're done
-  zgen save
-fi
-
+source $ZSH/oh-my-zsh.sh

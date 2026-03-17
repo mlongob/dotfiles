@@ -1,14 +1,19 @@
-# This tmux statusbar config was created by tmuxline.vim
-# on Thu, 04 Sep 2014
+# tmux statusbar
 
-set -g status-bg "colour233"
+set -g status-bg "colour235"
+set -g status-fg "colour223"
 set -g status-justify "left"
 set -g status-left-length "100"
-set -g status "on"
 set -g status-right-length "100"
-#set -g status-utf8 "on"
+set -g status "on"
+
+# Left: session name
+set -g status-left "#[fg=colour235,bg=colour109,bold] #S #[fg=colour109,bg=colour235,nobold]"
+
+# Right: date and hostname
+set -g status-right "#[fg=colour246,bg=colour235] %Y-%m-%d  %H:%M #[fg=colour109,bg=colour235]#[fg=colour235,bg=colour109,bold] #h "
+
+# Window status
+setw -g window-status-format "#[fg=colour246,bg=colour235] #I  #W "
+setw -g window-status-current-format "#[fg=colour235,bg=colour214,bold] #I  #W "
 setw -g window-status-separator ""
-set -g status-left "#[fg=colour195,bg=colour25,bold] #S #[fg=colour25,bg=colour233,nobold,nounderscore,noitalics]"
-set -g status-right "#[fg=colour236,bg=colour233,nobold,nounderscore,noitalics]#[fg=colour145,bg=colour236] %Y-%m-%d  %H:%M #[fg=colour25,bg=colour236,nobold,nounderscore,noitalics]#[fg=colour195,bg=colour25] #h "
-setw -g window-status-format "#[fg=colour240,bg=colour233] #I #[fg=colour240,bg=colour233] #W "
-setw -g window-status-current-format "#[fg=colour233,bg=colour236,nobold,nounderscore,noitalics]#[fg=colour145,bg=colour236] #I #[fg=colour145,bg=colour236] #W #[fg=colour236,bg=colour233,nobold,nounderscore,noitalics]"

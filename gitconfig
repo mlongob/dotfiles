@@ -3,7 +3,10 @@
 	email = mlongob@gmail.com
 
 [diff]
-	tool = gvimdiff
+	tool = vscode
+
+[difftool "vscode"]
+	cmd = code --wait --diff $LOCAL $REMOTE
 
 [difftool]
 	prompt = false
@@ -17,14 +20,11 @@
 [mergetool]
 	keepBackup = false
 
-[mergetool "fugitive"]
-	cmd = vim -f -c \"Gvdiff\" \"$MERGED\"
-
-[mergetool "gfugitive"]
-	cmd = gvim -f -c \"Gvdiff\" \"$MERGED\"
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
 
 [merge]
-	tool = fugitive
+	tool = vscode
 
 [core]
 	preloadindex = true
@@ -113,7 +113,5 @@
 [include]
 	path = ~/.gitconfig_local
 
-[url "bbgithub:"]
-	insteadof = https://bbgithub.dev.bloomberg.com/
 [init]
 	defaultBranch = main

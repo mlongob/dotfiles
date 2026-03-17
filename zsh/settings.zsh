@@ -21,8 +21,7 @@ setopt extendedhistory
 # Time to wait for additional characters in a sequence
 KEYTIMEOUT=10 # corresponds to 100ms
 
-# Use vim as the editor
-export ALTERNATE_EDITOR=""
+# Default editor
 export EDITOR="vim"
 
 # Use vim style line editing in zsh
@@ -33,7 +32,7 @@ bindkey -a 'G' end-of-buffer-or-history
 # Undo
 bindkey -a 'u' undo
 bindkey -a '^R' redo
-# Edit line
+# Edit line in editor
 bindkey -a '^V' edit-command-line
 # Backspace
 bindkey '^?' backward-delete-char
@@ -44,14 +43,9 @@ zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
-# bind UP and DOWN arrow keys (compatibility fallback
-# for Ubuntu 12.04, Fedora 21, and MacOSX 10.9 users)
+# bind UP and DOWN arrow keys (compatibility fallback)
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
-
-# bind P and N for EMACS mode
-bindkey -M emacs '^P' history-substring-search-up
-bindkey -M emacs '^N' history-substring-search-down
 
 # bind k and j for VI mode
 bindkey -M vicmd 'k' history-substring-search-up
@@ -63,6 +57,5 @@ bindkey -M viins 'jk' vi-cmd-mode
 # Use incremental search
 bindkey "^R" history-incremental-search-backward
 
-# BMS team
-export UUID=10724260
-export TOOLKIT_USERNAME="mlongob1"
+# zoxide (better cd)
+eval "$(zoxide init zsh)"

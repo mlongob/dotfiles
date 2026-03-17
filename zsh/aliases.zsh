@@ -8,19 +8,13 @@ alias l='ls'
 alias cp='cp -i'
 alias mv='mv -i'
 
-hub_path=$(which hub)
-if (( $+commands[hub] ))
-then
-      alias git=$hub_path
-fi
-
 # git related aliases
 alias gag='git exec ag'
 
 # Update dotfiles
 function dfu() {
     (
-        cd ~/.dotfiles && git pullff && ./install -q
+        cd ~/.dotfiles && git pull --ff-only && ./install -q
     )
 }
 
@@ -42,20 +36,8 @@ function jump() {
     cd "$(dirname ${1})"
 }
 
-# cd replacement for screen to track cwd (like tmux)
-function scr_cd()
-{
-    builtin cd $1
-    screen -X chdir $PWD
-}
-
-if [[ -n $STY ]]; then
-    alias cd=scr_cd
-fi
-
 # Go up [n] directories
-function up()
-{
+function up() {
     local cdir="$(pwd)"
     if [[ "${1}" == "" ]]; then
         cdir="$(dirname "${cdir}")"
@@ -87,14 +69,6 @@ function in() {
 function nonascii() {
     LC_ALL=C grep -n '[^[:print:][:space:]]' ${1}
 }
-
-# Mirror a website
-alias mirrorsite='wget -m -k -K -E -e robots=off'
-
-# Emacs aliases
-alias et="emacsclient -t"
-alias e="emacsclient -n"
-alias ec="emacsclient -c -a emacs -n"
 
 # Docker compose
 alias doco="docker-compose"
