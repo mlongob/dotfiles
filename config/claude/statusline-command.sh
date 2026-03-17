@@ -19,7 +19,6 @@ bg_green='\033[48;2;166;227;161m'
 bg_sapphire='\033[48;2;116;199;236m'
 bg_lavender='\033[48;2;180;190;254m'
 
-bold='\033[1m'
 reset='\033[0m'
 
 # Data from Claude Code
@@ -77,16 +76,16 @@ line=""
 
 # Red: OS icon + username
 line+="${fg_red}\xee\x82\xb6${reset}"
-line+="${bg_red}${fg_crust}${bold} \xf3\xb0\x80\xb5 $(whoami) ${reset}"
+line+="${bg_red}${fg_crust} \xf3\xb0\x80\xb5 $(whoami) ${reset}"
 
 # Peach (orange): directory
 line+="${fg_red}${bg_peach}\xee\x82\xb0${reset}"
-line+="${bg_peach}${fg_crust}${bold} ${short_path} ${reset}"
+line+="${bg_peach}${fg_crust} ${short_path} ${reset}"
 
 # Yellow: git branch + status
 if [ -n "$git_branch" ]; then
   line+="${fg_peach}${bg_yellow}\xee\x82\xb0${reset}"
-  line+="${bg_yellow}${fg_crust}${bold} \xee\x82\xa0 ${git_branch}"
+  line+="${bg_yellow}${fg_crust} \xef\x90\x98 ${git_branch}"
   [ -n "$git_status_str" ] && line+=" ${git_status_str}"
   line+=" ${reset}"
   next_fg=$fg_yellow
@@ -96,14 +95,14 @@ fi
 
 # Green: model + context %
 line+="${next_fg}${bg_green}\xee\x82\xb0${reset}"
-line+="${bg_green}${fg_crust}${bold} \xf3\xb0\xa7\x91 ${model}"
+line+="${bg_green}${fg_crust} \xf3\xb0\xa7\x91 ${model}"
 [ -n "$used_pct" ] && line+=" [${used_pct}%]"
 line+=" ${reset}"
 
 # Sapphire: cost
 if [ -n "$cost_fmt" ]; then
   line+="${fg_green}${bg_sapphire}\xee\x82\xb0${reset}"
-  line+="${bg_sapphire}${fg_crust}${bold} ${cost_fmt} ${reset}"
+  line+="${bg_sapphire}${fg_crust} ${cost_fmt} ${reset}"
   next_fg2=$fg_sapphire
 else
   next_fg2=$fg_green
@@ -112,7 +111,7 @@ fi
 # Lavender: duration
 if [ -n "$dur" ]; then
   line+="${next_fg2}${bg_lavender}\xee\x82\xb0${reset}"
-  line+="${bg_lavender}${fg_crust}${bold} \xf3\xb0\x85\x90 ${dur} ${reset}"
+  line+="${bg_lavender}${fg_crust} \xf3\xb0\x85\x90 ${dur} ${reset}"
   line+="${fg_lavender}\xee\x82\xb4${reset}"
 else
   line+="${next_fg2}\xee\x82\xb4${reset}"

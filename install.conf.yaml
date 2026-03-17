@@ -48,6 +48,13 @@
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]
+    - command: >
+        if [ ! -d "$HOME/.oh-my-zsh" ]; then
+          sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
+        fi
+      stdout: true
+      stderr: true
+      description: Installing oh-my-zsh
     - command: brew bundle --file=~/.dotfiles/Brewfile
       stdin: true
       stdout: true
