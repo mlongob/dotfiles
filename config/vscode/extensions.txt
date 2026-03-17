@@ -15,7 +15,12 @@ eamodio.gitlens
 editorconfig.editorconfig
 esbenp.prettier-vscode
 streetsidesoftware.code-spell-checker
+usernamehw.errorlens
+
+# Git
+mhutchie.git-graph
 
 # AI
 anthropic.claude-code
+github.copilot
 github.copilot-chat

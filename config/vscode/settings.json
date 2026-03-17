@@ -11,6 +11,11 @@
     "editor.wordWrap": "off",
     "editor.minimap.enabled": false,
     "editor.suggestSelection": "first",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.linkedEditing": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
@@ -19,12 +24,14 @@
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "catppuccin-mocha",
     "workbench.startupEditor": "none",
+    "workbench.editor.highlightModifiedTabs": true,
 
     // ── Terminal ─────────────────────────────────────────────────────────────
     "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
     "terminal.integrated.fontSize": 13,
 
     // ── Files ────────────────────────────────────────────────────────────────
+    "files.autoSave": "afterDelay",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
