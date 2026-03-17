@@ -20,6 +20,10 @@
     ~/.config/ghostty/config:
         path: config/ghostty/config
         create: true
+    ~/Library/Application Support/Code/User/settings.json:
+        path: config/vscode/settings.json
+        force: true
+        create: true
 
 
 - shell:
@@ -51,3 +55,11 @@
       stdout: true
       stderr: true
       description: Applying macOS defaults
+    - command: >
+        if command -v code &>/dev/null; then
+          grep -v '^#' ~/.dotfiles/config/vscode/extensions.txt | grep -v '^$' |
+          xargs -L1 code --install-extension --force 2>/dev/null; true
+        fi
+      stdout: true
+      stderr: true
+      description: Installing VS Code extensions

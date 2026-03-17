@@ -1,0 +1,139 @@
+{
+    // ── Editor ───────────────────────────────────────────────────────────────
+    "editor.fontFamily": "FiraCode Nerd Font Mono, 'Symbols Nerd Font Mono', monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 1.5,
+    "editor.lineNumbers": "relative",
+    "editor.rulers": [80, 120],
+    "editor.scrollBeyondLastLine": false,
+    "editor.renderWhitespace": "boundary",
+    "editor.wordWrap": "off",
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+
+    // ── Workbench / Theme ────────────────────────────────────────────────────
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.startupEditor": "none",
+
+    // ── Terminal ─────────────────────────────────────────────────────────────
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+    "terminal.integrated.fontSize": 13,
+
+    // ── Files ────────────────────────────────────────────────────────────────
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+
+    // ── VSCodeVim ────────────────────────────────────────────────────────────
+    // Performance: run vim extension in its own thread
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+
+    "vim.enable": true,
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.incsearch": true,
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+
+    // Relative line numbers are set above via editor.lineNumbers = "relative"
+
+    // Insert mode bindings
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+
+    // Normal mode bindings
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // Clear search highlight
+        {
+            "before": ["<leader>", "h"],
+            "commands": [":nohl"]
+        },
+        // Save
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.files.save"]
+        },
+        // Close editor
+        {
+            "before": ["<leader>", "q"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        // Toggle sidebar
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        // Quick open (like fzf :Files)
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        // Find in files (like :Rg)
+        {
+            "before": ["<leader>", "r"],
+            "commands": ["workbench.action.findInFiles"]
+        },
+        // Go to definition
+        {
+            "before": ["g", "d"],
+            "commands": ["editor.action.revealDefinition"]
+        },
+        // Go to references
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.goToReferences"]
+        },
+        // Hover / show docs
+        {
+            "before": ["K"],
+            "commands": ["editor.action.showHover"]
+        },
+        // Navigate between panes (mirrors vim-tmux-navigator style)
+        {
+            "before": ["<C-h>"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["<C-l>"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            "before": ["<C-k>"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["<C-j>"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        }
+    ],
+
+    // Visual mode bindings
+    "vim.visualModeKeyBindingsNonRecursive": [
+        // Indent/dedent and re-select
+        {
+            "before": [">"],
+            "commands": ["editor.action.indentLines"]
+        },
+        {
+            "before": ["<"],
+            "commands": ["editor.action.outdentLines"]
+        }
+    ],
+
+    // Claude Code
+    "claudeCode.preferredLocation": "panel"
+}

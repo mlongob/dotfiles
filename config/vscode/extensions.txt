@@ -1,0 +1,21 @@
+# VS Code extensions — install with:
+#   cat ~/.dotfiles/config/vscode/extensions.txt | grep -v '^#' | xargs -L1 code --install-extension
+
+# Theme
+catppuccin.catppuccin-vsc
+catppuccin.catppuccin-vsc-icons
+
+# Vim mode
+vscodevim.vim
+
+# Git
+eamodio.gitlens
+
+# Editor enhancements
+editorconfig.editorconfig
+esbenp.prettier-vscode
+streetsidesoftware.code-spell-checker
+
+# AI
+anthropic.claude-code
+github.copilot-chat

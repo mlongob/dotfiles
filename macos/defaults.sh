@@ -67,6 +67,9 @@ defaults write com.apple.dock tilesize -int 48
 # Enable key repeat (disable press-and-hold for accents popup)
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+# VS Code — also needs its own key-repeat setting for VSCodeVim
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
 # Fast key repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 2
 
