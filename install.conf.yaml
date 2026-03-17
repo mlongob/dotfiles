@@ -40,6 +40,10 @@
         path: config/claude/CLAUDE.md
         force: true
         create: true
+    ~/.claude/statusline-command.sh:
+        path: config/claude/statusline-command.sh
+        force: true
+        create: true
 
 
 - shell:
