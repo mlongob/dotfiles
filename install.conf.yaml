@@ -8,8 +8,12 @@
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.zsh: zsh/
-    ~/.zprofile: zprofile
-    ~/.zshrc: zshrc
+    ~/.zprofile:
+        path: zprofile
+        force: true
+    ~/.zshrc:
+        path: zshrc
+        force: true
     ~/.config/starship/starship.toml:
         path: config/starship/starship.toml
         create: true
@@ -20,11 +24,21 @@
       stdin: true
       stdout: true
       stderr: true
+    - command: >
+        curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      stdout: true
+      stderr: true
+      description: Installing vim-plug
     - command: vim +PlugInstall +qall
       stdin: true
       stdout: true
       stderr: true
-    - command: ~/.tmux/plugins/tpm/bin/install_plugins
-      stdin: true
+    - command: >
+        tmux new-session -d -s __install__ 2>/dev/null;
+        ~/.tmux/plugins/tpm/bin/install_plugins;
+        tmux kill-session -t __install__ 2>/dev/null;
+        true
       stdout: true
       stderr: true
+      description: Installing tmux plugins via TPM
