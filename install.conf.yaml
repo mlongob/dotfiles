@@ -25,6 +25,14 @@
         path: config/vscode/settings.json
         force: true
         create: true
+    ~/.claude/settings.json:
+        path: config/claude/settings.json
+        force: true
+        create: true
+    ~/.claude/CLAUDE.md:
+        path: config/claude/CLAUDE.md
+        force: true
+        create: true
 
 
 - shell:
