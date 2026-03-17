@@ -17,10 +17,13 @@
     ~/.config/starship/starship.toml:
         path: config/starship/starship.toml
         create: true
+    ~/.config/ghostty/config:
+        path: config/ghostty/config
+        create: true
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]
-    - command: brew install tmux zsh-autosuggestions zsh-syntax-highlighting fzf zoxide starship
+    - command: brew install tmux zsh-autosuggestions zsh-syntax-highlighting fzf zoxide starship && brew install --cask ghostty font-fira-code-nerd-font
       stdin: true
       stdout: true
       stderr: true
