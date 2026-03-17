@@ -10,6 +10,9 @@
     ~/.zsh: zsh/
     ~/.zprofile: zprofile
     ~/.zshrc: zshrc
+    ~/.config/starship/starship.toml:
+        path: config/starship/starship.toml
+        create: true
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]
