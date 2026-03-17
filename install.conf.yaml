@@ -23,10 +23,11 @@
 
 - shell:
     - [git submodule update --init --recursive, Updating submodules]
-    - command: brew install tmux zsh-autosuggestions zsh-syntax-highlighting fzf zoxide starship && brew install --cask ghostty font-fira-code-nerd-font
+    - command: brew bundle --file=~/.dotfiles/Brewfile
       stdin: true
       stdout: true
       stderr: true
+      description: Installing Homebrew packages
     - command: >
         curl -fLo ~/.vim/autoload/plug.vim --create-dirs
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
