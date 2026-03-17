@@ -36,6 +36,13 @@ brew "mas"               # Mac App Store CLI
 # ─── Development ─────────────────────────────────────────────────────────────
 brew "python@3.14"
 brew "mise"              # runtime version manager (node, python, go, etc.)
+brew "cmake"             # build system generator
+brew "ninja"             # fast build system
+brew "clang-format"      # C/C++ code formatter
+brew "cookiecutter"      # project templates
+brew "pandoc"            # document converter
+brew "kcat"              # Kafka CLI consumer/producer
+brew "netcat"            # TCP/UDP networking utility
 
 # ─── Fonts ───────────────────────────────────────────────────────────────────
 cask "font-fira-code-nerd-font"
