@@ -11,3 +11,6 @@ export PATH="$HOME/.dotfiles/bin:$PATH"
 
 # Local bin
 export PATH="$HOME/.local/bin:$PATH"
+
+# mise shims (makes node/npx/etc. available to non-interactive processes)
+export PATH="$HOME/.local/share/mise/shims:$PATH"

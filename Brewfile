@@ -41,6 +41,9 @@ brew "mise"              # runtime version manager (node, python, go, etc.)
 cask "font-fira-code-nerd-font"
 cask "font-symbols-only-nerd-font"
 
+# ─── AI / ML ─────────────────────────────────────────────────────────────────
+cask "ollama"            # local LLM inference (cask includes precompiled Metal library)
+
 # ─── GUI Apps ────────────────────────────────────────────────────────────────
 cask "visual-studio-code"
 cask "raycast"           # Spotlight replacement + productivity launcher
