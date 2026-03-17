@@ -1,8 +1,22 @@
-# ls aliases
-alias ls='ls --color'
-alias ll='ls -lah'
-alias la='ls -A'
-alias l='ls'
+# ls aliases — use eza if available
+if command -v eza &>/dev/null; then
+    alias ls='eza --group-directories-first'
+    alias ll='eza -lah --group-directories-first --git'
+    alias la='eza -a --group-directories-first'
+    alias l='eza --group-directories-first'
+    alias lt='eza --tree --level=2'
+    alias lta='eza --tree --level=2 -a'
+else
+    alias ls='ls --color'
+    alias ll='ls -lah'
+    alias la='ls -A'
+    alias l='ls'
+fi
+
+# bat — better cat
+if command -v bat &>/dev/null; then
+    alias cat='bat --paging=never'
+fi
 
 # Aliases to protect against overwriting
 alias cp='cp -i'
