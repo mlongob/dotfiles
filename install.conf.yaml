@@ -46,3 +46,7 @@
       stdout: true
       stderr: true
       description: Installing tmux plugins via TPM
+    - command: ~/.dotfiles/macos/defaults.sh
+      stdout: true
+      stderr: true
+      description: Applying macOS defaults
