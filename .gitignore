@@ -1,8 +1,6 @@
-vim/bundle/*
-!vim/bundle/Vundle.vim
+vim/autoload/
+vim/plugged/
 vim/backup/*
-vim/config/*
-vim/non_used/*
 vim/tmp/*
 vim/undo/*
 vim/tags/*
@@ -10,11 +8,8 @@ vim/.netrwhist
 vim/.VimballRecord
 tmux/plugins/*
 !tmux/plugins/tpm
-stack/*
-!stack/config.yaml
 *.swp
 *.out
 *.log
 *.pyc
 *~
-vim/haskellmode.config
