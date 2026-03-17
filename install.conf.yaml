@@ -1,6 +1,7 @@
 - clean: ['~']
 
 - link:
+    ~/.hushlogin: hushlogin
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.tmux.conf: tmux.conf
