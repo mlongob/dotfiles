@@ -14,9 +14,8 @@
     ~/.zshrc:
         path: zshrc
         force: true
-    ~/.config/starship/starship.toml:
+    ~/.config/starship.toml:
         path: config/starship/starship.toml
-        create: true
     ~/.config/ghostty/config:
         path: config/ghostty/config
         create: true
