@@ -15,6 +15,7 @@ cask "ghostty"
 # ─── CLI essentials ──────────────────────────────────────────────────────────
 brew "fzf"               # fuzzy finder
 brew "gh"                # GitHub CLI
+brew "glab"              # GitLab CLI
 brew "git"               # newer than macOS system git
 brew "git-delta"         # better git diffs
 brew "lazygit"           # terminal UI for git
