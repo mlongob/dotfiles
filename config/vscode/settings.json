@@ -142,5 +142,6 @@
     ],
 
     // Claude Code
-    "claudeCode.preferredLocation": "panel"
+    "claudeCode.preferredLocation": "panel",
+    "redhat.telemetry.enabled": true
 }
