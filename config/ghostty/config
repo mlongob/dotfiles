@@ -49,9 +49,6 @@ cursor-style-blink = false
 clipboard-read = allow
 clipboard-write = allow
 
-# Notifications
-notify-after-command = never
-
 # Keybindings — match tmux split conventions
 keybind = cmd+d=new_split:right
 keybind = cmd+shift+d=new_split:down
