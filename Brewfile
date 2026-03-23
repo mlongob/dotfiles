@@ -61,6 +61,7 @@ cask "font-symbols-only-nerd-font"
 
 # ─── AI / ML ─────────────────────────────────────────────────────────────────
 cask "ollama"            # local LLM inference (cask includes precompiled Metal library)
+cask "lm-studio"         # GUI for local LLM experimentation
 
 # ─── GUI Apps ────────────────────────────────────────────────────────────────
 cask "visual-studio-code"

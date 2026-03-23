@@ -32,3 +32,8 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 if [ -f ~/.zshrc_local_after ]; then
     source ~/.zshrc_local_after
 fi
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/mlongob/.lmstudio/bin"
+# End of LM Studio CLI section
+
