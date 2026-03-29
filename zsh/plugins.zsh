@@ -9,6 +9,7 @@ plugins=(
   pip
   python
   virtualenv
+  history-substring-search
   macos
   gh
   fzf

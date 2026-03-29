@@ -13,3 +13,4 @@ tmux/plugins/*
 *.log
 *.pyc
 *~
+.claude/

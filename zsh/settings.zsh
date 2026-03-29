@@ -43,13 +43,30 @@ bindkey -a '^V' edit-command-line
 bindkey '^?' backward-delete-char
 bindkey '^H' backward-delete-char
 
+# bind UP and DOWN arrow keys
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
+# bind UP and DOWN arrow keys (compatibility fallback)
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+# bind k and j for VI mode
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+
 # jk to normal mode
 bindkey -M viins 'jk' vi-cmd-mode
 
-# atuin (better shell history — replaces history-substring-search and ^R)
+# atuin (full history search on Ctrl-R, up-arrow stays as substring search)
 if command -v atuin &>/dev/null; then
-    eval "$(atuin init zsh)"
+    eval "$(atuin init zsh --disable-up-arrow)"
 fi
+
+# fzf history search on Ctrl-G (moved from Ctrl-R since atuin owns that now)
+bindkey -M viins '^G' fzf-history-widget
+bindkey -M vicmd '^G' fzf-history-widget
 
 # zoxide (better cd)
 eval "$(zoxide init zsh)"
