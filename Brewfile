@@ -68,3 +68,23 @@ cask "visual-studio-code"
 cask "raycast"           # Spotlight replacement + productivity launcher
 cask "rectangle"         # Window manager
 cask "docker"            # Docker Desktop — requires: sudo mkdir -p /usr/local/cli-plugins
+
+# ─── CTF / Security ────────────────────────────────────────────────────────
+cask "wireshark"         # network protocol analyzer (may need: sudo brew install --cask wireshark)
+# Ghidra: download manually from https://ghidra-sre.org/ (not in Homebrew)
+brew "nmap"              # network scanner
+brew "john-jumbo"        # John the Ripper password cracker
+brew "hashcat"           # GPU-accelerated password cracker
+brew "binwalk"           # firmware/binary analysis & extraction
+brew "radare2"           # reverse engineering framework (CLI)
+brew "pwntools"          # CTF exploit development library (Python)
+brew "gobuster"          # directory/DNS brute-forcer
+brew "sqlmap"            # SQL injection automation
+brew "hydra"             # network login brute-forcer
+brew "aircrack-ng"       # wireless security tools
+brew "exiftool"          # image/file metadata reader (stego challenges)
+brew "foremost"          # file carving / recovery
+brew "hexedit"           # hex editor
+brew "socat"             # advanced netcat (relay, proxy, etc.)
+brew "gdb"               # GNU debugger
+brew "upx"               # binary packer/unpacker
