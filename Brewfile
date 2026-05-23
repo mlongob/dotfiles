@@ -43,6 +43,7 @@ brew "difftastic"        # structural/AST-aware diffs
 brew "tokei"             # fast code statistics / line counter
 brew "bandwhich"         # bandwidth usage per process
 brew "hyperfine"         # CLI benchmarking tool
+brew "chezmoi"           # dotfiles manager
 
 # ─── Development ─────────────────────────────────────────────────────────────
 brew "python@3.14"
@@ -55,22 +56,28 @@ brew "pandoc"            # document converter
 brew "kcat"              # Kafka CLI consumer/producer
 brew "netcat"            # TCP/UDP networking utility
 
+# ─── Java / JVM ──────────────────────────────────────────────────────────────
+cask "temurin@8"         # Eclipse Temurin JDK 8 (Intel/Rosetta) — legacy Java tooling
+
 # ─── Fonts ───────────────────────────────────────────────────────────────────
 cask "font-fira-code-nerd-font"
 cask "font-symbols-only-nerd-font"
 
 # ─── AI / ML ─────────────────────────────────────────────────────────────────
-cask "ollama"            # local LLM inference (cask includes precompiled Metal library)
+cask "ollama-app"        # local LLM inference (renamed upstream from "ollama"; includes precompiled Metal library)
 cask "lm-studio"         # GUI for local LLM experimentation
 
-# ─── GUI Apps ────────────────────────────────────────────────────────────────
+# ─── Editors ─────────────────────────────────────────────────────────────────
 cask "visual-studio-code"
+cask "zed"               # fast Rust-native editor with first-class vim mode
+
+# ─── GUI Apps ────────────────────────────────────────────────────────────────
 cask "raycast"           # Spotlight replacement + productivity launcher
 cask "rectangle"         # Window manager
-cask "docker"            # Docker Desktop — requires: sudo mkdir -p /usr/local/cli-plugins
+cask "docker-desktop"    # Docker Desktop (renamed upstream from "docker") — requires: sudo mkdir -p /usr/local/cli-plugins
 
 # ─── CTF / Security ────────────────────────────────────────────────────────
-cask "wireshark"         # network protocol analyzer (may need: sudo brew install --cask wireshark)
+cask "wireshark-app"     # network protocol analyzer (renamed upstream from "wireshark"; system-path pkg needs sudo: brew install --cask wireshark-app)
 # Ghidra: download manually from https://ghidra-sre.org/ (not in Homebrew)
 brew "nmap"              # network scanner
 brew "john-jumbo"        # John the Ripper password cracker

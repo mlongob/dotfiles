@@ -10,7 +10,8 @@ Mario Longobardi's personal development environment — macOS, zsh, tmux, vim, a
 | [zsh](https://zsh.org) + [oh-my-zsh](https://ohmyz.sh) | Shell |
 | [Starship](https://starship.rs) | Prompt (Catppuccin Powerline preset) |
 | [tmux](https://github.com/tmux/tmux) + [catppuccin/tmux](https://github.com/catppuccin/tmux) | Terminal multiplexer |
-| [vim](https://www.vim.org) + [vim-plug](https://github.com/junegunn/vim-plug) | Editor |
+| [vim](https://www.vim.org) + [vim-plug](https://github.com/junegunn/vim-plug) | Terminal editor |
+| [Zed](https://zed.dev) | GUI editor (vim mode, Catppuccin Mocha) |
 | [Dotbot](https://github.com/anishathalye/dotbot) | Dotfile installation |
 | [TPM](https://github.com/tmux-plugins/tpm) | tmux plugin manager |
 | [Homebrew](https://brew.sh) + Brewfile | Package management |
@@ -50,6 +51,7 @@ The install script will:
 ├── bin/                        # Personal scripts (on $PATH)
 ├── config/
 │   ├── ghostty/config          # Ghostty terminal config
+│   ├── zed/                    # Zed editor settings + vim keymap
 │   └── starship/starship.toml  # Starship prompt config
 ├── macos/
 │   └── defaults.sh             # macOS system preferences

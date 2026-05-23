@@ -1,0 +1,46 @@
+{
+    // ── Vim ──────────────────────────────────────────────────────────────────
+    "vim_mode": true,
+    "vim": {
+        "use_system_clipboard": "always",
+        "use_smartcase_find": true
+    },
+
+    // ── Theme ────────────────────────────────────────────────────────────────
+    // Catppuccin Mocha to match the rest of the stack. Extensions auto-install
+    // on first launch.
+    "auto_install_extensions": {
+        "catppuccin": true,
+        "catppuccin-icons": true
+    },
+    "theme": "Catppuccin Mocha",
+    "icon_theme": "Catppuccin Mocha",
+
+    // ── Font ─────────────────────────────────────────────────────────────────
+    "buffer_font_family": "FiraCode Nerd Font Mono",
+    "buffer_font_size": 13,
+    "buffer_font_features": {
+        "calt": true,
+        "liga": true
+    },
+
+    // ── Editor UI ────────────────────────────────────────────────────────────
+    "relative_line_numbers": true,
+    "current_line_highlight": "all",
+    "wrap_guides": [80, 120],
+    "show_wrap_guides": true,
+    "soft_wrap": "none",
+    "vertical_scroll_margin": 5,
+    "minimap": {
+        "show": "never"
+    },
+
+    // ── Indentation ──────────────────────────────────────────────────────────
+    "tab_size": 4,
+    "hard_tabs": false,
+
+    // ── On save ──────────────────────────────────────────────────────────────
+    "format_on_save": "on",
+    "remove_trailing_whitespace_on_save": true,
+    "ensure_final_newline_on_save": true
+}

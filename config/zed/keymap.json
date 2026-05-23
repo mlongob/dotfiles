@@ -1,0 +1,35 @@
+// Zed keymap — mirrors the VSCode vim setup. Only declares bindings that
+// differ from Zed's vim defaults (e.g. `g d` go-to-definition and `g A`
+// find-references already ship out of the box).
+[
+    // jk to leave insert mode
+    {
+        "context": "vim_mode == insert",
+        "bindings": {
+            "j k": "vim::NormalBefore"
+        }
+    },
+
+    // Space-leader bindings (normal mode)
+    {
+        "context": "vim_mode == normal",
+        "bindings": {
+            "space w": "workspace::Save",
+            "space h": "editor::Cancel",
+            "space q": "pane::CloseActiveItem",
+            "space e": "workspace::ToggleLeftDock",
+            "space f": "file_finder::Toggle",
+            "space r": "pane::DeploySearch",
+
+            // Match the gr / K muscle memory from VSCode
+            "g r": "editor::FindAllReferences",
+            "shift-k": "editor::Hover",
+
+            // Pane navigation, vim-tmux-navigator style
+            "ctrl-h": "workspace::ActivatePaneLeft",
+            "ctrl-j": "workspace::ActivatePaneDown",
+            "ctrl-k": "workspace::ActivatePaneUp",
+            "ctrl-l": "workspace::ActivatePaneRight"
+        }
+    }
+]

@@ -25,6 +25,7 @@ dfu                # Pull latest from git and re-run install
 **Key config locations:**
 - `config/vscode/settings.json` → symlinked to `~/Library/Application Support/Code/User/settings.json`
 - `config/vscode/extensions.txt` → declarative extension list (comments with `#`, one extension ID per line)
+- `config/zed/settings.json` + `config/zed/keymap.json` → symlinked to `~/.config/zed/` (JSONC; vim mode mirrors the VSCodeVim setup)
 - `config/starship/starship.toml` → symlinked to `~/.config/starship.toml` (not `~/.config/starship/starship.toml`)
 - `config/ghostty/config` → symlinked to `~/.config/ghostty/config`
 

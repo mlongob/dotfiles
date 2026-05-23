@@ -25,6 +25,14 @@
         path: config/vscode/settings.json
         force: true
         create: true
+    ~/.config/zed/settings.json:
+        path: config/zed/settings.json
+        force: true
+        create: true
+    ~/.config/zed/keymap.json:
+        path: config/zed/keymap.json
+        force: true
+        create: true
     ~/.config/bat/themes:
         path: config/bat/themes
         force: true
