@@ -1,5 +1,22 @@
 {
     // ── Vim ──────────────────────────────────────────────────────────────────
+    "project_panel": {
+        "dock": "right"
+    },
+    "outline_panel": {
+        "dock": "right"
+    },
+    "collaboration_panel": {
+        "dock": "right"
+    },
+    "agent": {
+        "dock": "left",
+        "favorite_models": [],
+        "model_parameters": []
+    },
+    "git_panel": {
+        "dock": "right"
+    },
     "vim_mode": true,
     "vim": {
         "use_system_clipboard": "always",
