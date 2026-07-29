@@ -75,6 +75,7 @@ cask "zed"               # fast Rust-native editor with first-class vim mode
 cask "raycast"           # Spotlight replacement + productivity launcher
 cask "rectangle"         # Window manager
 cask "docker-desktop"    # Docker Desktop (renamed upstream from "docker") — requires: sudo mkdir -p /usr/local/cli-plugins
+cask "gimp"              # raster image editor
 
 # ─── CTF / Security ────────────────────────────────────────────────────────
 cask "wireshark-app"     # network protocol analyzer (renamed upstream from "wireshark"; system-path pkg needs sudo: brew install --cask wireshark-app)
